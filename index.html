@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/fontawesome-free-5.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Casual Coder!  Probably could have found a better description of a developer to show the "nose to the grindstone" type of work mentality.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <strike><a href="#" class="text-white">Email Me</a></strike>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <i class="fa fa-road" aria-hidden="true"> </i>
+                    <strong> Casual Coder</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Projects, Articles, How-Tos</h1>
+                <p class="lead text-muted">Each blurb below will offer some bit of information on how to do something, fix something, where to find information on how to build something</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Technology</a>
+                    <a href="#" class="btn btn-secondary my-2">References</a>
+                </p>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                Job Tracker
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Jobtracker is running behind schedule.  Its purpose is to track jobs applied to finding and following up on jobs</p>
+                                <p class="card">Technologies used:<br/>
+                                    node graphql mongo mongoose datatables
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Link</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                        Customers
+                                    </div>
+                                    <div class="card-body">
+                                <p class="card-text">Customers is a sample on php mvc design mysql and datatables.  It is a small web application to demonstrate datatables with php, ajax.</p>
+                                <p class="card">Technologies used:<br/>
+                                    php mysql datatables
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Link</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                        Maintain
+                                    </div>
+
+                            <div class="card-body">
+                                <p class="card-text">Maintain is a maintenance tracking program for small engine repair.  It is currently
+                                    being done in html but will be updated with react-native in the future </p>
+                                    <p class="card">
+                                        Technologies used: <br/>html
+                                    </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Link</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>This page was made using bootstrap 4.1.3.  There is a great example on their website from where I used an example as a template.</p>
+            <p>Technologies used:
+                <a href="https://getbootstrap.com/">Bootstrap</a>
+                <a href="https://getbootstrap.com/docs/4.1/examples/album/">Bootstrap Example Pages</a>
+                <a href="https://fontawesome.com/">Fontawesome</a> for the little "road" icon next to Casual Coder</a>
+                <a href="https://popper.js.org">Popper</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="./public/js/jquery-3.3.1.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+</body>
+
+</html>
