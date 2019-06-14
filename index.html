@@ -6,51 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./public/css/fontawesome-free-5.2.0-web/css/all.css">
     <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 
 <body>
     <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">Casual Coder! Passionate about software development. Having a blast with node.</p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <strike><a href="#" class="text-white">Email Me</a></strike>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+              <i class="fa fa-road" aria-hidden="true"> </i>
+              <strong> Casual Coder</strong>
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://wp.casualcoder.net">Notes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Demos</a>
+            </li>
+          </ul>
         </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <i class="fa fa-road" aria-hidden="true"> </i>
-                    <strong> Casual Coder</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </div>
+      </nav>
     </header>
 
     <main role="main">
-
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Projects, Articles, How-Tos</h1>
-                <p class="lead text-muted">Each blurb below will offer some bit of information on how to do something, fix something, where to find information on how to build something</p>
+                <p class="lead text-muted">Each Card offers some bit of information on how to do something, fix something, where to find information on how to build something</p>
                 <p>
                     <a href="#" class="btn btn-primary my-2">Technology</a>
                     <a href="#" class="btn btn-secondary my-2">References</a>
@@ -65,23 +57,49 @@
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                             <div class="card-header">
-                                Job Tracker
+                                node-maintain
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Tracks jobs and job information applied for
+                                <p class="card-text">The backend of Maintenance program is for storing maintenance and parts info for maintaining "things with engines".
                                 <p class="card">Technologies used:<br/>
-                                    node graphql mongo mongoose datatables
+                                    node graphql mysql webpack sequelize redis cookies session winston express REST
                                 </p>
+                                <small class="text-muted">This is my favorite. Is a very busy REST service for doing very little</small>
+
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button id="btn-code-jt" type="button" class="btn btn-sm btn-outline-secondary" target="_blank" onclick="window.open('https://github.com/mclark610/jobtrack')">Code</button>
                                         <button id="btn-link-jt" type="button" class="btn btn-sm btn-outline-secondary" target="_blank" disabled>Link</button>
                                     </div>
-                                    <small class="text-muted">1 min</small>
+                                    <br/>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    react-maintain
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">The frontend of Maintenance which is for storing maintenance and parts info for maintaining "things with engines".
+                                    <p class="card">Technologies used:<br/>
+                                        react graphql  webpack cookies REST consumer
+                                    </p>
+                                    <small class="text-muted">Start of a rest frontend for node-maintain</small>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button id="btn-code-jt" type="button" class="btn btn-sm btn-outline-secondary" target="_blank" onclick="window.open('https://github.com/mclark610/jobtrack')">Code</button>
+                                            <button id="btn-link-jt" type="button" class="btn btn-sm btn-outline-secondary" target="_blank" disabled>Link</button>
+                                        </div>
+                                        <br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                                 <div class="card-header">
@@ -98,7 +116,6 @@
                                         <button id="btn-code-cust" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/customers')">Code</button>
                                         <button id="btn-link-cust" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +135,6 @@
                                                 <button id="btn-code-np" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/node-password')">Code</button>
                                                 <button id="btn-link-np" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
                                             </div>
-                                            <small class="text-muted">9 mins</small>
                                         </div>
                                     </div>
                         </div>
@@ -139,7 +155,6 @@
                                         <button id="btn-code-cust" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/node-password')">Code</button>
                                         <button id="btn-link-cust" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +182,8 @@
 
     <script src="./public/js/jquery-3.3.1.min.js"></script>
     <script src="./public/js/popper.min.js"></script>
-    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/index.js"></script>
 </body>
 
 </html>

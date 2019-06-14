@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page SideBar</title>
+    <link rel="stylesheet" href="./public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/fontawesome-free-5.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div>
+            <ul class="lit-unstyled components">
+                <p>Dummy Heading</p>
+                <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            </ul>
+        </nav>
+        <div id="content">
+            Content
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                            <span>Toggle Sidebar</span>
+                        </button>
+                    </div>
+                </nav>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm card-info" style="border-radius: 3px;">
+                                <div class="card-header">
+                                    Hacker Tracker
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Checks which users tested ssh integrity
+                                    <p class="card">Technologies used:<br/>
+                                        bash perl html js css datatables
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button id="btn-code-jt" type="button" class="btn btn-sm btn-outline-secondary" target="_blank" onclick="window.open('#')">Code</button>
+                                            <button id="btn-link-jt" type="button" class="btn btn-sm btn-outline-secondary" target="_blank" disabled>Link</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm card-info" style="border-radius: 3px;">
+                                    <div class="card-header">
+                                            Customers
+                                        </div>
+                                        <div class="card-body">
+                                    <p class="card-text">Customers is a sample on php mvc design mysql and datatables.  It is a small web application to demonstrate datatables with php, ajax.</p>
+                                    <p class="card">Technologies used:<br/>
+                                        php mysql datatables
+                                    </p>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button id="btn-code-cust" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/customers')">Code</button>
+                                            <button id="btn-link-cust" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm card-info" style="border-radius: 3px;">
+                                    <div class="card-header">
+                                            Password
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Learning how to use passport along with the flash feature. Review README.md for credits</p>
+                                                <p class="card">
+                                                    Technologies used: <br/>node express handlebars
+                                                </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button id="btn-code-np" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/node-password')">Code</button>
+                                                    <button id="btn-link-np" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                    </div> <!-- row -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm" style="border-radius: 3px;">
+                                    <div class="card-header">
+                                            Passport example
+                                        </div>
+                                        <div class="card-body">
+                                    <p class="card-text">Customers is a sample on php mvc design mysql and datatables.  It is a small web application to demonstrate datatables with php, ajax.</p>
+                                    <p class="card">Technologies used:<br/>
+                                        php mysql datatables
+                                    </p>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button id="btn-code-cust" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/customers')">Code</button>
+                                            <button id="btn-link-cust" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm card-info" style="border-radius: 3px;">
+                                <div class="card-header">
+                                        Docker Compose
+                                    </div>
+                                    <div class="card-body">
+                                <p class="card-text">This is a sample docker compose yaml file to demonstrate how to use docker compose in a workstation environment.  It also describes some of the cool tools</p>
+                                <p class="card">Technologies used:<br/>
+                                    docker docker-compose
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button id="btn-code-cust" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/customers')">Code</button>
+                                        <button id="btn-link-cust" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row -->
+            <footer class="text-muted">
+                <div class="container">
+                    <p class="float-right">
+                        <a href="#">Back to top</a>
+                    </p>
+                    <p>This page was made using bootstrap 4.3.1.  There is a great example on their website from where I used an example as a template.</p>
+                    <p>Technologies used:
+                        <a href="https://getbootstrap.com/">Bootstrap</a>
+                        <a href="https://getbootstrap.com/docs/4.1/examples/album/">Bootstrap Example Pages</a>
+                        <a href="https://fontawesome.com/">Fontawesome</a> for the little "road" icon next to Casual Coder</a>
+                        <a href="https://popper.js.org">Popper</a>
+                        <a href="https://bootstrapious.com/p/bootstrap-sidebar">Cool sidebar explanation!</a>
+                    </p>
+                </div>
+            </footer>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./public/js/jquery-3.3.1.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technology Tools</title>
+    <link rel="stylesheet" href="./public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/fontawesome-free-5.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Casual Coder! Passionate about software development. Having a blast with node.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <strike><a href="#" class="text-white">Email Me</a></strike>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="http://localhost:3000" class="navbar-brand d-flex align-items-center">
+                    <i class="fa fa-road" aria-hidden="true"> </i>
+                    <strong> Casual Coder</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="bd-example">
+              <div id="carousel-tech" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm card-info" style="border-radius: 3px;">
+                            <div class="card-header">
+                                Job Tracker
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Tracks jobs and job information applied for
+                                <p class="card">Technologies used:<br/>
+                                    node graphql mongo mongoose datatables
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button id="btn-code-jt" type="button" class="btn btn-sm btn-outline-secondary" target="_blank" onclick="window.open('https://github.com/mclark610/jobtrack')">Code</button>
+                                        <button id="btn-link-jt" type="button" class="btn btn-sm btn-outline-secondary" target="_blank" disabled>Link</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm card-info" style="border-radius: 3px;">
+                                <div class="card-header">
+                                        Customers
+                                    </div>
+                                    <div class="card-body">
+                                <p class="card-text">Customers is a sample on php mvc design mysql and datatables.  It is a small web application to demonstrate datatables with php, ajax.</p>
+                                <p class="card">Technologies used:<br/>
+                                    php mysql datatables
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button id="btn-code-cust" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/customers')">Code</button>
+                                        <button id="btn-link-cust" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm card-info" style="border-radius: 3px;">
+                                <div class="card-header">
+                                        Password
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Learning how to use passport along with the flash feature. Review README.md for credits</p>
+                                            <p class="card">
+                                                Technologies used: <br/>node express handlebars
+                                            </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button id="btn-code-np" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/node-password')">Code</button>
+                                                <button id="btn-link-np" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+
+                </div> <!-- row -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm" style="border-radius: 3px;">
+                                <div class="card-header">
+                                        Passport example
+                                    </div>
+                                    <div class="card-body">
+                                <p class="card-text">Customers is a sample on php mvc design mysql and datatables.  It is a small web application to demonstrate datatables with php, ajax.</p>
+                                <p class="card">Technologies used:<br/>
+                                    php mysql datatables
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button id="btn-code-cust" type="button" class="btn btn-sm btn-outline-secondary" target="blank" onclick="window.open('https://github.com/mclark610/customers')">Code</button>
+                                        <button id="btn-link-cust" type="button" class="btn btn-sm btn-outline-secondary" disabled>Link</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>This page was made using bootstrap 4.3.1.  There is a great example on their website from where I used an example as a template.</p>
+            <p>Technologies used:
+                <a href="https://getbootstrap.com/">Bootstrap</a>
+                <a href="https://getbootstrap.com/docs/4.1/examples/album/">Bootstrap Example Pages</a>
+                <a href="https://fontawesome.com/">Fontawesome</a> for the little "road" icon next to Casual Coder</a>
+                <a href="https://popper.js.org">Popper</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="./public/js/jquery-3.3.1.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/index.js"></script>
+
+</body>
+
+</html>
