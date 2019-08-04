@@ -123,3 +123,15 @@ ul ul a {
     padding-left: 30px !important;
     background: #6d7fcc;
 }
+
+.blue_text {
+    color: cadetblue;
+}
+.red_text {
+    color: indianred;
+}
+.center-table {
+    margin: 0 auto;
+    width:  80%;
+    text-align: center;
+}
