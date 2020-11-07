@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="./public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./public/css/fontawesome-free-5.2.0-web/css/all.css">
     <link rel="stylesheet" href="./public/css/styles.css">
-</head>
+    <style>
+    .title-color {
+        color: #6699cc;
+    }
 
+    </style>
+
+</head>
 <body>
     <header>
             <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top  bg-info">
           <a href="#" class="navbar-brand d-flex align-items-center">
               <i class="fa fa-road" aria-hidden="true"> </i>
               <strong> Casual Coder</strong>
@@ -39,14 +45,21 @@
     </header>
 
     <main role="main">
-        <section class="jumbotron text-center">
+        <section class="jumbotron text-center  shadow-lg ">
             <div class="container">
-                <h1 class="jumbotron-heading">Projects, Articles, How-Tos</h1>
-                <p class="lead text-muted">Information on how to do something, fix something and where to find information on how to build something</p>
+                <h1 class="jumbotron-heading title-color">Projects, Articles, How-Tos</h1>
+                <!--
+                <p class="lead text-muted padding-4">Information on how to do something, fix something and where to find information on how to build something</p>
+            -->
+                <blockquote class="blockquote">
+                    <p class="mb-0">
+                        Information how to do something, fix something and where to find information on how to build something
+                    </p>
+                </blockquote>
                 <p>
-                    <a href="#" class="btn btn-outline-success disabled">Technology</a>
-                    <a href="https://wp.casualcoder.net" class="btn btn-outline-success ">Notes</a>
-                    <a href="#" class="btn btn-outline-success disabled">References</a>
+                    <a href="#" class="btn btn-outline-success disabled  shadow-sm">Technology</a>
+                    <a href="https://wp.casualcoder.net" class="btn btn-outline-success  shadow-sm" >Notes</a>
+                    <a href="#" class="btn btn-outline-success disabled  shadow-sm">References</a>
                 </p>
             </div>
         </section>
