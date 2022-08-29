@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.app-background {
+  background-color:rgba(17, 82, 180, 0.884)
+}
+
+.boxy {
+  border-width: 12px;
+  padding: 10px;
+  width: 8rem;
+  margin-left: 200px;
+  border: 1px solid brown;
+  text-align:center;
+  background-color: bisque;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: gray;
+}
+
+input:focus {
+  border-color: gray
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Login form */
+.form-login {
+  margin:auto;
+  border-width: 2rem;
+  padding: 3rem;
+  width: 12rem;
+  background-color:rgba(255,255,255,1);
+  border: 5px solid rgba(238, 252, 246, 0.884);
+  border-radius:0.5em;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  color:#2c2c2cda;
+}
+
+#input-name, 
+#input-password {
+  margin-top: 0.5rem;
+  margin-bottom:0.5rem;
+  
+
+  padding: 0.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color:#2c2c2cda;
+  border-bottom: 1px solid #2c2c2cda;
+}
+
+.default-border {
+  color:#2c2c2cda;
+}
+
+.button-submit {
+  margin-top: 0.5rem;
+  margin-bottom:0.5rem;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight:bold;
+  padding: 8px 22px;
+  border-radius: 4px;
+  color:white;
+  background-color: #008CBA;
+}
+
+.form-submit {
+  padding-top:0.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color:#2c2c2cda;
+  text-align:center;
+  border-radius: 0.25rem;
+}
